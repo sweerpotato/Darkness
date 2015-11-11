@@ -1,0 +1,15 @@
+Instructions:
+
+You have one register which is initialized at 0.
+
+█	Darkness, increments/decrements depending on mode
+▄	Decrement switch
+▀	Increment switch
+─	Toggles ascii output on and off, default is off
+■	Output
+Turns:
+╬ turn right if the register is non-zero
+┼ turn right if the register is non-zero, resets the register after the turn
+<space> Terminate
+
+You start heading east
