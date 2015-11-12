@@ -51,7 +51,7 @@ def navigate(darkness):
             increment_mode = False
         elif(op == "■"):
             if(ascii is True):
-                print(chr(value))
+                print(chr(value), end = "")
             else:
                 print(value, end = "")
         elif(op == "─"):
