@@ -13,7 +13,7 @@ def ERROR(s):
 def check_darkness_size(lines):
     columns = len(lines[0])
     for line in lines:
-        if(len(line) > columns):
+        if(len(line) != columns):
             ERROR("MALFORMED DARKNESS")
 
 def generate_darkness(program):
@@ -55,10 +55,7 @@ def navigate(darkness):
             else:
                 print(value, end = "")
         elif(op == "─"):
-            if(ascii is True):
-                ascii = False
-            else:
-                ascii = True
+            ascii = not ascii
         elif(op == "╬" or op == "┼"):
             if(direction == Direction.NORTH):
                 if(value != 0):

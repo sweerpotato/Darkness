@@ -8,8 +8,8 @@ You have one register which is initialized at 0.
 ─	Toggles ascii output on and off, default is off
 ■	Output
 Turns:
-╬ turn right if the register is non-zero
-┼ turn right if the register is non-zero, resets the register after the turn
+╬ turn right if the register is non-zero, turn left if the register is zero
+┼ turn right if the register is non-zero, turn left if the register is zero and also resets the register after the turn
 <space> Terminate
 
 You start heading east
